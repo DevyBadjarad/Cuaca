@@ -8,6 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
 import id.ac.unhas.cuaca.model.CuacaTerkini
+import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 
 const val API_KEY = "7e2f8a0bafb5659d2a8930e09760ffff"
 

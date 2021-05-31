@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import id.ac.unhas.cuaca.R
+import id.ac.unhas.cuaca.model.CuacaTerkini
 import id.ac.unhas.cuaca.model.network.CurrentApiService
 import kotlinx.android.synthetic.main.fragment_cuaca_terkini_fragment.*
 import kotlinx.coroutines.Dispatchers
@@ -35,7 +36,7 @@ class fragmentCuacaTerkini : Fragment() {
         val apiService = CurrentApiService()
 
         GlobalScope.launch(Dispatchers.Main) {
-            val currentWeatherResponse = apiService.getCurrentWeather("Indonesia").await()
+            val CuacaTerkini = apiService.getCurrentWeather("Indonesia").await()
             textView.text = CuacaTerkini.toString()
         }
 
