@@ -5,4 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/fragmentCuacaTerkini">
 
+    <fragment
+        android:id="@+id/fragmentCuacaTerkini"
+        android:name="id.ac.unhas.cuaca.terkini.fragmentCuacaTerkini"
+        android:label="fragment_cuaca_terkini" />
+
 </navigation>
